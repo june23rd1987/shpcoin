@@ -1,0 +1,58 @@
+const cron = require('node-cron');
+const { spawn } = require('child_process');// npm install child_process
+const schedule = require('node-schedule');// npm install node-schedule
+
+
+
+
+schedule.scheduleJob('* * * * *', function() {
+  spawn('node', ['./src/cron/water.js']);
+  console.log('running task ./src/cron/water.js');
+});
+
+
+
+
+/*
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/userCoins.js');
+	require('./src/cron/userCoins.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/checkin.js');
+	require('./src/cron/checkin.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/water.js');
+	require('./src/cron/water.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/boardgame.js');
+	require('./src/cron/boardgame.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/live.js');
+	require('./src/cron/live.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/luckydraw.js');
+	require('./src/cron/luckydraw.js');
+});
+
+cron.schedule('* * * * *', function() {
+	console.log('running task ./src/cron/userCoins.js');
+	require('./src/cron/userCoins.js');
+});
+*/
+
+
+
+
+
+
+

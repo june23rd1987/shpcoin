@@ -1,0 +1,13 @@
+echo off
+
+cd "C:\Users\JUPITER\Desktop\GoogleDrive\shopee_coin_gen-master"
+
+node ./src/cron/userCoins.js
+node ./src/cron/checkin.js
+node ./src/cron/water.js
+node ./src/cron/boardgame.js
+node ./src/cron/live.js
+node ./src/cron/luckydraw.js
+node ./src/cron/userCoins.js
+
+
